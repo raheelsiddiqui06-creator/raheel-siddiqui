@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Raheel Siddiqui — Chief Commercial Officer</title>
+<meta name="description" content="Raheel Siddiqui — Chief Commercial Officer. 20+ years of pharmaceutical commercial leadership across Cardiology, Oncology, Neurology, Orthopedics, Gynecology and General/Acute Care.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%2316232B%22/><text x=%2250%22 y=%2266%22 font-family=%22Georgia,serif%22 font-size=%2246%22 fill=%22%23A97C34%22 text-anchor=%22middle%22>RS</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#EFF2EE;
+    --paper-raised:#FFFFFF;
+    --ink:#16232B;
+    --ink-soft:#465059;
+    --brass:#A97C34;
+    --brass-soft:#C9A15F;
+    --teal:#2B5D56;
+    --teal-soft:#3E7A70;
+    --line:#D2D6CB;
+    --line-strong:#B7BDAF;
+    --max:1180px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'IBM Plex Sans',sans-serif;
+    font-size:16px;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--teal);}
+  ::selection{background:var(--brass-soft);color:#fff;}
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 32px;}
+  h1,h2,h3{font-family:'Fraunces',serif;font-weight:600;margin:0;color:var(--ink);}
+  .eyebrow{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:12px;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    color:var(--teal);
+    display:flex;align-items:center;gap:10px;
+  }
+  .eyebrow::before{content:"";width:22px;height:1px;background:var(--brass);display:inline-block;}
+  :focus-visible{outline:2px solid var(--teal);outline-offset:3px;}
+
+  header{
+    position:sticky;top:0;z-index:50;
+    background:rgba(239,242,238,.92);
+    backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav{display:flex;align-items:center;justify-content:space-between;padding:16px 32px;max-width:var(--max);margin:0 auto;}
+  .mark{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);}
+  .mark .box{
+    width:34px;height:34px;background:var(--ink);color:var(--brass-soft);
+    display:flex;align-items:center;justify-content:center;
+    font-family:'Fraunces',serif;font-weight:600;font-size:16px;border-radius:3px;
+    overflow:hidden;
+  }
+  .mark .box img{width:100%;height:100%;object-fit:cover;}
+  .mark .name{font-family:'Fraunces',serif;font-weight:600;font-size:16px;letter-spacing:.01em;}
+  .mark .name span{display:block;font-family:'IBM Plex Mono',monospace;font-weight:400;font-size:10px;letter-spacing:.12em;color:var(--ink-soft);text-transform:uppercase;}
+  nav.links{display:flex;align-items:center;gap:28px;}
+  nav.links a{color:var(--ink-soft);text-decoration:none;font-size:14px;font-weight:500;position:relative;padding:4px 0;}
+  nav.links a:hover{color:var(--ink);}
+  nav.links a::after{content:"";position:absolute;left:0;bottom:-2px;width:0;height:1px;background:var(--brass);transition:width .25s ease;}
+  nav.links a:hover::after{width:100%;}
+
+  .dropdown{position:relative;}
+  .dd-btn{
+    font-family:'IBM Plex Mono',monospace;font-size:12.5px;letter-spacing:.04em;
+    background:var(--ink);color:var(--paper);border:1px solid var(--ink);
+    padding:10px 16px;border-radius:2px;cursor:pointer;display:flex;align-items:center;gap:8px;
+  }
+  .dd-btn:hover{background:#233440;}
+  .dd-btn svg{width:10px;height:10px;transition:transform .2s ease;}
+  .dropdown.open .dd-btn svg{transform:rotate(180deg);}
+  .dd-menu{
+    position:absolute;right:0;top:calc(100% + 8px);
+    background:var(--paper-raised);border:1px solid var(--line-strong);
+    box-shadow:0 12px 28px rgba(22,35,43,.14);min-width:270px;border-radius:3px;padding:6px;
+    opacity:0;visibility:hidden;transform:translateY(-6px);
+    transition:opacity .18s ease, transform .18s ease, visibility .18s ease;
+    max-height:70vh;overflow-y:auto;
+  }
+  .dropdown.open .dd-menu{opacity:1;visibility:visible;transform:translateY(0);}
+  .dd-item{display:flex;flex-direction:column;gap:1px;padding:10px 12px;border-radius:2px;cursor:pointer;font-size:13.5px;color:var(--ink);}
+  .dd-item small{font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:var(--ink-soft);letter-spacing:.03em;}
+  .dd-item:hover{background:var(--paper);}
+  .dd-item.active{background:var(--teal);color:#fff;}
+  .dd-item.active small{color:#cfe6e1;}
+  .menu-toggle{display:none;background:none;border:1px solid var(--line-strong);border-radius:3px;width:38px;height:38px;align-items:center;justify-content:center;cursor:pointer;}
+  .menu-toggle span, .menu-toggle span::before, .menu-toggle span::after{content:"";display:block;width:16px;height:1.5px;background:var(--ink);position:relative;}
+  .menu-toggle span::before{position:absolute;top:-5px;}
+  .menu-toggle span::after{position:absolute;top:5px;}
+
+  .hero{padding:76px 0 64px;}
+  .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:start;}
+  .hero-right{display:flex;flex-direction:column;gap:20px;}
+  .portrait{
+    display:flex;align-items:center;gap:18px;
+    background:var(--paper-raised);border:1px solid var(--line-strong);border-radius:4px;
+    padding:18px;box-shadow:0 18px 40px -22px rgba(22,35,43,.25);
+  }
+  .portrait img{
+    width:88px;height:88px;border-radius:50%;object-fit:cover;
+    border:2px solid var(--brass-soft);flex:none;
+  }
+  .portrait .p-name{font-family:'Fraunces',serif;font-weight:600;font-size:18px;}
+  .portrait .p-role{font-family:'IBM Plex Mono',monospace;font-size:11.5px;color:var(--teal);margin-top:3px;letter-spacing:.02em;}
+  .portrait .p-loc{font-size:12.5px;color:var(--ink-soft);margin-top:5px;}
+  .hero h1{font-size:clamp(40px,5vw,58px);line-height:1.03;letter-spacing:-.01em;margin:14px 0 6px;}
+  .hero .title{font-family:'IBM Plex Mono',monospace;font-size:15px;color:var(--teal);letter-spacing:.02em;margin-bottom:22px;}
+  .hero p.lede{font-size:17px;color:var(--ink-soft);max-width:52ch;margin-bottom:26px;}
+  .meta-row{display:flex;flex-wrap:wrap;gap:10px 22px;font-size:13.5px;color:var(--ink-soft);margin-bottom:30px;font-family:'IBM Plex Mono',monospace;}
+  .meta-row span{display:flex;align-items:center;gap:6px;}
+  .meta-row b{color:var(--ink);font-weight:500;}
+  .cta-row{display:flex;flex-wrap:wrap;gap:12px;}
+  .btn{font-family:'IBM Plex Sans',sans-serif;font-weight:600;font-size:14px;padding:13px 22px;border-radius:2px;text-decoration:none;cursor:pointer;border:1px solid transparent;display:inline-flex;align-items:center;gap:8px;}
+  .btn-primary{background:var(--ink);color:#fff;}
+  .btn-primary:hover{background:#233440;}
+  .btn-outline{border-color:var(--line-strong);color:var(--ink);background:transparent;}
+  .btn-outline:hover{border-color:var(--ink);}
+
+  .ledger{background:var(--paper-raised);border:1px solid var(--line-strong);border-radius:4px;padding:26px 26px 20px;position:relative;box-shadow:0 18px 40px -18px rgba(22,35,43,.25);}
+  .ledger::before{content:"";position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--teal),var(--brass));border-radius:4px 4px 0 0;}
+  .ledger-head{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:18px;padding-top:6px;}
+  .ledger-head h3{font-size:15px;text-transform:uppercase;letter-spacing:.08em;font-family:'IBM Plex Mono',monospace;font-weight:600;color:var(--ink-soft);}
+  .ledger-head span{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--brass);}
+  .ledger-item{border-top:1px solid var(--line);padding:15px 0;}
+  .ledger-item:first-of-type{border-top:none;}
+  .li-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;}
+  .li-name{font-weight:600;font-size:14.5px;}
+  .li-name small{display:block;font-weight:400;font-size:11.5px;color:var(--ink-soft);font-family:'IBM Plex Mono',monospace;margin-top:1px;}
+  .li-figs{text-align:right;font-family:'IBM Plex Mono',monospace;font-size:13.5px;}
+  .li-figs b{color:var(--teal);}
+  .spark{width:100%;height:34px;display:block;}
+  .ledger-foot{margin-top:14px;padding-top:14px;border-top:1px dashed var(--line-strong);display:flex;justify-content:space-between;font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--ink-soft);}
+  .ledger-foot b{color:var(--ink);}
+
+  section{padding:58px 0;border-top:1px solid var(--line);}
+  section .sec-head{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:30px;flex-wrap:wrap;gap:10px;}
+  section h2{font-size:clamp(26px,3vw,34px);}
+  .tag{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.06em;color:var(--teal);border:1px solid var(--teal);padding:5px 10px;border-radius:20px;text-transform:uppercase;}
+
+  #summary-text{font-size:17.5px;color:var(--ink-soft);max-width:80ch;margin-bottom:0;}
+  .comp-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:28px;}
+  .comp-chip{background:var(--paper-raised);border:1px solid var(--line);border-radius:3px;padding:14px 16px;font-size:13.5px;font-weight:500;display:flex;align-items:center;gap:10px;}
+  .comp-chip::before{content:"";width:6px;height:6px;background:var(--brass);border-radius:50%;flex:none;}
+
+  .hl-list{margin-top:24px;display:grid;gap:0;border-top:1px solid var(--line);}
+  .hl-item{display:grid;grid-template-columns:64px 1fr;gap:20px;padding:20px 0;border-bottom:1px solid var(--line);}
+  .hl-item .num{font-family:'IBM Plex Mono',monospace;color:var(--brass);font-size:13px;padding-top:2px;}
+  .hl-item p{margin:0;font-size:15.5px;color:var(--ink-soft);}
+  .hl-item strong{color:var(--ink);}
+
+  .timeline{border-left:2px solid var(--line-strong);margin-left:6px;padding-left:32px;position:relative;}
+  .tl-item{position:relative;padding-bottom:34px;}
+  .tl-item:last-child{padding-bottom:0;}
+  .tl-item::before{content:"";position:absolute;left:-38px;top:4px;width:11px;height:11px;border-radius:50%;background:var(--paper);border:2px solid var(--teal);}
+  .tl-item.current::before{background:var(--brass);border-color:var(--brass);}
+  .tl-date{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--teal);letter-spacing:.03em;margin-bottom:6px;}
+  .tl-role{font-size:19px;font-weight:600;font-family:'Fraunces',serif;}
+  .tl-co{font-size:14px;color:var(--ink-soft);margin-bottom:10px;}
+  .tl-item ul{margin:0;padding-left:18px;color:var(--ink-soft);font-size:14.5px;}
+  .tl-item li{margin-bottom:6px;}
+  .earlier{margin-top:36px;background:var(--paper-raised);border:1px solid var(--line);border-radius:4px;padding:22px 26px;}
+  .earlier h3{font-family:'IBM Plex Mono',monospace;font-size:12.5px;text-transform:uppercase;letter-spacing:.08em;color:var(--ink-soft);margin-bottom:14px;}
+  .earlier-row{display:flex;justify-content:space-between;gap:16px;padding:9px 0;border-top:1px solid var(--line);font-size:13.5px;}
+  .earlier-row:first-of-type{border-top:none;}
+  .earlier-role{font-weight:600;}
+  .earlier-co{color:var(--ink-soft);}
+  .earlier-date{font-family:'IBM Plex Mono',monospace;color:var(--ink-soft);white-space:nowrap;font-size:12.5px;}
+
+  .pub-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:26px;}
+  .pub-card{background:var(--paper-raised);border:1px solid var(--line);border-radius:4px;padding:20px;}
+  .pub-card .pub-type{font-family:'IBM Plex Mono',monospace;font-size:10.5px;text-transform:uppercase;letter-spacing:.07em;color:var(--brass);margin-bottom:8px;}
+  .pub-card h4{margin:0 0 6px;font-family:'Fraunces',serif;font-size:16.5px;font-weight:600;}
+  .pub-card p{margin:0;font-size:13.5px;color:var(--ink-soft);}
+
+  .video-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
+  .video-card{background:var(--paper-raised);border:1px solid var(--line);border-radius:4px;overflow:hidden;}
+  .video-card video{width:100%;display:block;aspect-ratio:9/16;object-fit:cover;background:#0c1216;max-height:340px;}
+  .video-cap{padding:10px 12px;font-size:12.5px;color:var(--ink-soft);font-family:'IBM Plex Mono',monospace;border-top:1px solid var(--line);}
+  .media-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:26px;}
+  .media-card{background:var(--ink);color:var(--paper);border-radius:4px;padding:20px;text-decoration:none;display:flex;flex-direction:column;justify-content:space-between;min-height:120px;border:1px solid var(--ink);}
+  .media-card:hover{background:#233440;}
+  .media-card .m-top{display:flex;justify-content:space-between;align-items:flex-start;}
+  .media-card .m-icon{width:26px;height:26px;border:1px solid var(--brass-soft);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--brass-soft);font-size:11px;}
+  .media-card .m-label{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--brass-soft);text-transform:uppercase;letter-spacing:.05em;}
+  .media-card .m-title{font-size:14.5px;font-weight:500;margin-top:14px;}
+
+  .awards-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:0;margin-top:26px;border-top:1px solid var(--line);}
+  .award-row{display:grid;grid-template-columns:1fr auto;gap:16px;padding:16px 0;border-bottom:1px solid var(--line);align-items:center;}
+  .award-row:nth-child(odd){padding-right:26px;border-right:1px solid var(--line);}
+  .award-row:nth-child(even){padding-left:26px;}
+  .award-name{font-weight:600;font-size:14.5px;}
+  .award-org{font-size:13px;color:var(--ink-soft);}
+  .award-date{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--brass);white-space:nowrap;}
+
+  .edu-lang{display:grid;grid-template-columns:1.4fr 1fr;gap:40px;margin-top:26px;}
+  .edu-item{padding:16px 0;border-top:1px solid var(--line);}
+  .edu-item:first-child{border-top:none;}
+  .edu-item .deg{font-weight:600;font-size:15px;}
+  .edu-item .sch{font-size:13.5px;color:var(--ink-soft);}
+  .lang-item{display:flex;justify-content:space-between;align-items:center;padding:12px 0;border-top:1px solid var(--line);}
+  .lang-item:first-child{border-top:none;}
+  .lang-bar{flex:1;height:6px;background:var(--line);border-radius:4px;margin:0 14px;overflow:hidden;}
+  .lang-bar i{display:block;height:100%;background:var(--teal);border-radius:4px;}
+
+  footer{border-top:1px solid var(--line);padding:50px 0 40px;}
+  .foot-grid{display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:24px;}
+  .foot-grid h2{font-size:28px;max-width:14ch;}
+  footer p{color:var(--ink-soft);font-size:14px;}
+  .foot-links{display:flex;gap:14px;flex-wrap:wrap;}
+
+  @media (max-width:920px){
+    .hero-grid{grid-template-columns:1fr;}
+    .comp-grid{grid-template-columns:repeat(2,1fr);}
+    .pub-grid,.media-grid{grid-template-columns:1fr;}
+    .video-grid{grid-template-columns:repeat(2,1fr);}
+    .hero-right{margin-top:8px;}
+    .awards-grid{grid-template-columns:1fr;}
+    .award-row:nth-child(odd){border-right:none;padding-right:0;}
+    .award-row:nth-child(even){padding-left:0;}
+    .edu-lang{grid-template-columns:1fr;}
+    nav.links{display:none;}
+    .menu-toggle{display:flex;}
+  }
+  @media (max-width:600px){
+    .wrap,.nav{padding-left:20px;padding-right:20px;}
+    .comp-grid{grid-template-columns:1fr;}
+    .hl-item{grid-template-columns:40px 1fr;}
+    .video-grid{grid-template-columns:1fr;}
+  }
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+    *{transition:none!important;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <a href="#top" class="mark">
+      <span class="box"><img src="assets/raheel-siddiqui.png" alt=""></span>
+      <span class="name">Raheel Siddiqui<span>Chief Commercial Officer</span></span>
+    </a>
+    <nav class="links">
+      <a href="#experience">Experience</a>
+      <a href="#publications">Publications</a>
+      <a href="#media">Media</a>
+      <a href="#awards">Awards</a>
+      <a href="resume.html">Résumé</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div style="display:flex;align-items:center;gap:12px;">
+      <div class="dropdown" id="specialtyDropdown">
+        <button class="dd-btn" id="ddBtn" aria-haspopup="listbox" aria-expanded="false">
+          <span id="ddLabel">General / US Market</span>
+          <svg viewBox="0 0 10 6" fill="none"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5"/></svg>
+        </button>
+        <div class="dd-menu" id="ddMenu" role="listbox"></div>
+      </div>
+      <button class="menu-toggle" aria-label="Menu"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero" style="border-top:none;padding-top:56px;">
+    <div class="wrap">
+      <div class="hero-grid">
+        <div>
+          <p class="eyebrow">Pharmaceutical Commercial Leadership</p>
+          <h1>Raheel<br>Siddiqui</h1>
+          <p class="title">Chief Commercial Officer | Commercial excellence · Pharmaceutical leadership · Sales force effectiveness</p>
+          <p class="lede" id="summary-text">Loading executive summary…</p>
+          <div class="meta-row">
+            <span>📍 <b>Lombard, IL 60148</b></span>
+            <span>🛂 <b>Authorized to Work in the USA</b> (Green Card)</span>
+            <span>🎓 <b>MBA, Marketing</b></span>
+            <span>⏱ <b>20+ years</b> commercial leadership</span>
+          </div>
+          <div class="cta-row">
+            <a href="mailto:raheelsiddiqui06@gmail.com" class="btn btn-primary">Email Raheel →</a>
+            <a href="https://linkedin.com/in/raheel-siddiqui-b97b38176" target="_blank" rel="noopener" class="btn btn-outline">View LinkedIn</a>
+            <a href="resume.html" class="btn btn-outline">View Résumé →</a>
+          </div>
+        </div>
+
+        <div class="hero-right">
+        <div class="portrait">
+          <img src="assets/raheel-siddiqui.png" alt="Raheel Siddiqui">
+          <div>
+            <div class="p-name">Raheel Siddiqui</div>
+            <div class="p-role">Chief Commercial Officer</div>
+            <div class="p-loc">Lombard, IL · Karachi, Pakistan</div>
+          </div>
+        </div>
+        <div class="ledger">
+          <div class="ledger-head">
+            <h3>The Ledger — Brand Growth</h3>
+            <span>PKR / USD, run-rate</span>
+          </div>
+          <div class="ledger-item">
+            <div class="li-top">
+              <div class="li-name">Methycobal <small>Neurology · Hilton Pharma · 6 months</small></div>
+              <div class="li-figs">→ <b>$27.6M</b></div>
+            </div>
+            <svg class="spark" viewBox="0 0 300 34" preserveAspectRatio="none">
+              <polyline points="0,30 40,29 80,26 120,20 160,14 200,9 240,5 300,3" fill="none" stroke="#2B5D56" stroke-width="2"/>
+            </svg>
+          </div>
+          <div class="ledger-item">
+            <div class="li-top">
+              <div class="li-name">Risek <small>Gastroenterology · Getz Pharma · 3 years</small></div>
+              <div class="li-figs"><b>$24.1M</b> → <b>$44.8M</b></div>
+            </div>
+            <svg class="spark" viewBox="0 0 300 34" preserveAspectRatio="none">
+              <polyline points="0,20 50,19 100,17 150,15 200,11 250,7 300,4" fill="none" stroke="#A97C34" stroke-width="2"/>
+            </svg>
+          </div>
+          <div class="ledger-item">
+            <div class="li-top">
+              <div class="li-name">Helix Pharma <small>Full P&amp;L · Head of Marketing &amp; Sales · 3.5 years</small></div>
+              <div class="li-figs"><b>$5.5M</b> → <b>$11.4M</b></div>
+            </div>
+            <svg class="spark" viewBox="0 0 300 34" preserveAspectRatio="none">
+              <polyline points="0,28 60,25 120,20 180,14 240,8 300,3" fill="none" stroke="#2B5D56" stroke-width="2"/>
+            </svg>
+          </div>
+          <div class="ledger-foot">
+            <span>Current portfolio</span>
+            <span><b>~$160M</b> · 2,200+ professionals · 5 markets</span>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="competencies">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Core Competencies</h2>
+        <span class="tag" id="specTag">General / US Market view</span>
+      </div>
+      <div class="comp-grid" id="compGrid"></div>
+    </div>
+  </section>
+
+  <section id="highlights">
+    <div class="wrap">
+      <div class="sec-head"><h2>Career Highlights</h2></div>
+      <div class="hl-list" id="hlList"></div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="wrap">
+      <div class="sec-head"><h2>Professional Experience</h2></div>
+      <div class="timeline">
+        <div class="tl-item current">
+          <div class="tl-date">Dec 2025 — Present</div>
+          <div class="tl-role">Chief Commercial Officer</div>
+          <div class="tl-co">Hilton Pharma (Hilton Pharma &amp; Hinocon) · Karachi, Pakistan</div>
+          <ul>
+            <li>Hold enterprise-wide P&amp;L accountability for a ~$160M (PKR 46B) portfolio, driving topline growth, margin expansion, and long-term value creation across two operating companies.</li>
+            <li>Define and execute the group's go-to-market and commercial vision across multiple business units.</li>
+            <li>Lead the largest organizational segment in the group — 2,200+ professionals, including 7 direct-report directors — spanning Medical, Commercial Excellence, Training, Concept Development, and Distribution.</li>
+            <li>Drove the Methycobal neurology brand to a ~$27.6M run-rate within 6 months; advanced the company from 7th to 6th in the Pakistan pharmaceutical market ranking.</li>
+            <li>Partner directly with executive leadership and the Board on strategy, investment priorities, and long-range planning.</li>
+            <li>Drive international expansion across Sri Lanka, Cambodia, Kenya, Uganda, and Uzbekistan.</li>
+          </ul>
+        </div>
+        <div class="tl-item">
+          <div class="tl-date">Jan 2025 — Dec 2025</div>
+          <div class="tl-role">Commercial Director</div>
+          <div class="tl-co">Getz Pharma (Pvt) Limited · Karachi, Pakistan</div>
+          <ul>
+            <li>Led the acute general business division — a $124M (PKR 36B) portfolio and 1,700+ professionals.</li>
+            <li>Steered a cross-functional, matrixed leadership team spanning Finance, Supply Chain, HR, Marketing, Regulatory, and Medical Affairs.</li>
+            <li>Partnered with the Board and Executive Management to shape long-term commercial strategy.</li>
+          </ul>
+        </div>
+        <div class="tl-item">
+          <div class="tl-date">Jan 2022 — Dec 2024</div>
+          <div class="tl-role">Director, Marketing &amp; Sales</div>
+          <div class="tl-co">Getz Pharma (Pvt) Limited · Karachi, Pakistan</div>
+          <ul>
+            <li>Accountable for cluster commercial and marketing functions — $69M (PKR 20B) portfolio, 1,100-person team.</li>
+            <li>Grew the Risek brand from $24.1M to $44.8M; contributed to Getz's advance from 2nd to 1st in national market ranking.</li>
+            <li>Oversaw the digital marketing function, integrating modern commercial models into legacy operations.</li>
+          </ul>
+        </div>
+        <div class="tl-item">
+          <div class="tl-date">Nov 2020 — Mar 2022</div>
+          <div class="tl-role">Director, Business Unit</div>
+          <div class="tl-co">Getz Pharma (Pvt) Limited · Karachi, Pakistan</div>
+          <ul>
+            <li>Managed a $34M (PKR 10B) portfolio spanning Cardiology, Diabetology, Gastroenterology, and General Medicine.</li>
+            <li>Oversaw the Digital department alongside core commercial operations, with a focus on people development and retention.</li>
+          </ul>
+        </div>
+        <div class="tl-item">
+          <div class="tl-date">May 2017 — Nov 2020</div>
+          <div class="tl-role">Head of Marketing &amp; Sales</div>
+          <div class="tl-co">Helix Pharma (Pvt) Limited · Karachi, Pakistan</div>
+          <ul>
+            <li>Held full P&amp;L accountability for marketing, sales, distribution, institutional sales, and creative functions.</li>
+            <li>Grew company revenue from $5.5M to $11.4M — 106% growth in 3.5 years — through distributor restructuring and market revitalization.</li>
+          </ul>
+        </div>
+        <div class="tl-item">
+          <div class="tl-date">Jul 2016 — May 2017</div>
+          <div class="tl-role">Head of Marketing</div>
+          <div class="tl-co">Highnoon Laboratories Limited · Lahore, Pakistan</div>
+          <ul>
+            <li>Proposed and established Highnoon's first scientific office in Karachi.</li>
+            <li>Acted as change agent to transform Highnoon into Pakistan's first fully digital pharmaceutical company.</li>
+          </ul>
+        </div>
+        <div class="tl-item">
+          <div class="tl-date">Jun 2008 — Dec 2013</div>
+          <div class="tl-role">Business Unit Head</div>
+          <div class="tl-co">ATCO Laboratories Limited · Karachi, Pakistan</div>
+          <ul>
+            <li>Led formulary access initiatives and assessed new oncology business opportunities.</li>
+            <li>Launched Syngab 100mg (One Star Brand Award, 2008–09); Taxot, Paclitaxifil &amp; Pantestone recognized in IMS Best Launch (Q1 2010).</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="earlier">
+        <h3>Earlier Career</h3>
+        <div class="earlier-row"><div><div class="earlier-role">Director, Marketing &amp; Sales</div><div class="earlier-co">Pharmatec Pakistan (Pvt) Ltd., Karachi</div></div><div class="earlier-date">Aug 2015 – Feb 2016</div></div>
+        <div class="earlier-row"><div><div class="earlier-role">General Manager, Marketing &amp; Sales</div><div class="earlier-co">ATCO Laboratories Ltd., Karachi</div></div><div class="earlier-date">Jan 2014 – Aug 2015</div></div>
+        <div class="earlier-row"><div><div class="earlier-role">National Sales Manager — Gynae/Paeds (Transamin, Cefim, Ferosoft, Cerophene)</div><div class="earlier-co">Hilton Pharma Pakistan, Karachi</div></div><div class="earlier-date">May 2006 – May 2008</div></div>
+        <div class="earlier-row"><div><div class="earlier-role">Product Manager — Neurology &amp; Orthopedics</div><div class="earlier-co">Hilton Pharma Pakistan, Karachi</div></div><div class="earlier-date">May 2005 – May 2006</div></div>
+        <div class="earlier-row"><div><div class="earlier-role">Sales Manager – South</div><div class="earlier-co">Getz Pharma (Pvt) Limited, Karachi</div></div><div class="earlier-date">Nov 2004 – May 2005</div></div>
+        <div class="earlier-row"><div><div class="earlier-role">Area Sales Manager</div><div class="earlier-co">Getz Pharma (Pvt) Limited, Karachi</div></div><div class="earlier-date">Jun 2003 – Nov 2004</div></div>
+        <div class="earlier-row"><div><div class="earlier-role">Medical Representative</div><div class="earlier-co">Aventis Pharma, Karachi</div></div><div class="earlier-date">Nov 2001 – Jun 2003</div></div>
+        <div class="earlier-row"><div><div class="earlier-role">Medical Representative</div><div class="earlier-co">Bristol Myers Squibb, Karachi</div></div><div class="earlier-date">May 1999 – Nov 2001</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="publications">
+    <div class="wrap">
+      <div class="sec-head"><h2>Publications &amp; Clinical Guidelines</h2></div>
+      <div class="pub-grid">
+        <div class="pub-card">
+          <div class="pub-type">Peer-Reviewed Guideline · Jan 2024</div>
+          <h4>A Multidisciplinary Perspective on Low Back Pain Management</h4>
+          <p>Acknowledged contributor to this consensus guideline, developed with the Pakistan Society of Neurology and other specialty bodies, published in the Pakistan Journal of Medical Sciences.</p>
+        </div>
+        <div class="pub-card">
+          <div class="pub-type">Authored Feature · Dawn, Mar 2020</div>
+          <h4>Dealing with the Coronavirus: Social Distancing — The Need of the Hour</h4>
+          <p>Authored public-health feature on early COVID-19 social distancing measures.</p>
+        </div>
+        <div class="pub-card">
+          <div class="pub-type">National Campaign</div>
+          <h4>"Go Green Heal the World" — Risek</h4>
+          <p>National advertising campaign for the Risek brand at Getz Pharma; trended nationally on Twitter/X (#GoGreenHealtheWorld) alongside #GetzPharma.</p>
+        </div>
+        <div class="pub-card">
+          <div class="pub-type">Brand Campaign</div>
+          <h4>"6 Reasons to Prescribe Syngab"</h4>
+          <p>Flagship campaign for Syngab 100mg at ATCO Laboratories, contributing to its One Star Brand Award recognition.</p>
+        </div>
+        <div class="pub-card">
+          <div class="pub-type">Industry Feature</div>
+          <h4>Health Asia — Featured Industry Review</h4>
+          <p>Profiled on Health Asia, a regional healthcare industry publication and program.</p>
+        </div>
+        <div class="pub-card">
+          <div class="pub-type">Press Coverage · The Prescriber, May 2007</div>
+          <h4>National Seminar Series on Menorrhagia Management</h4>
+          <p>Profiled for organizing a national seminar series as National Sales Manager, Hilton Pharma.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="media">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Media &amp; Public Engagement</h2>
+        <span class="tag">Recognized by the Governor of Punjab</span>
+      </div>
+      <p style="max-width:70ch;color:var(--ink-soft);margin-bottom:0;">Began his media career as a Radio Jockey at FM 100 Pakistan, hosting public-awareness programs across a range of health topics. Later hosted and produced televised COVID-19 public-awareness campaigns under physician supervision, and conducted published interviews with prominent medical personalities for Daily Dawn. Received formal appreciation from the <strong>Governor of Punjab</strong> for public-health communication delivered via television, radio, and newspaper during the COVID-19 pandemic.</p>
+
+      <h3 style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;text-transform:uppercase;letter-spacing:.08em;color:var(--ink-soft);margin:34px 0 16px;">Video Appearances</h3>
+      <div class="video-grid">
+        <div class="video-card">
+          <video controls preload="metadata" src="media/appearance-1.mp4"></video>
+          <div class="video-cap">TV &amp; FM Appearance</div>
+        </div>
+        <div class="video-card">
+          <video controls preload="metadata" src="media/appearance-2.mp4"></video>
+          <div class="video-cap">TV &amp; FM Appearance</div>
+        </div>
+        <div class="video-card">
+          <video controls preload="metadata" src="media/appearance-3.mp4"></video>
+          <div class="video-cap">TV &amp; FM Appearance</div>
+        </div>
+        <div class="video-card">
+          <video controls preload="metadata" src="media/appearance-4.mp4"></video>
+          <div class="video-cap">TV &amp; FM Appearance</div>
+        </div>
+        <div class="video-card">
+          <video controls preload="metadata" src="media/appearance-5.mp4"></video>
+          <div class="video-cap">TV &amp; FM Appearance</div>
+        </div>
+      </div>
+
+      <h3 style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;text-transform:uppercase;letter-spacing:.08em;color:var(--ink-soft);margin:34px 0 16px;">Watch More</h3>
+      <div class="media-grid">
+        <a class="media-card" href="https://youtu.be/J3kG-KsGaGo" target="_blank" rel="noopener">
+          <div class="m-top"><span class="m-label">Broadcast</span><span class="m-icon">▶</span></div>
+          <div class="m-title">Brand Advertisement</div>
+        </a>
+        <a class="media-card" href="https://youtu.be/yjZZc-v8Nv8" target="_blank" rel="noopener">
+          <div class="m-top"><span class="m-label">Industry Review</span><span class="m-icon">▶</span></div>
+          <div class="m-title">Health Asia — Featured Review</div>
+        </a>
+        <a class="media-card" href="https://www.youtube.com/live/uI-vlsKuV9M" target="_blank" rel="noopener">
+          <div class="m-top"><span class="m-label">TV / FM</span><span class="m-icon">▶</span></div>
+          <div class="m-title">TV &amp; FM Radio Appearance</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="awards">
+    <div class="wrap">
+      <div class="sec-head"><h2>Awards &amp; Recognition</h2></div>
+      <div class="awards-grid">
+        <div class="award-row"><div><div class="award-name">Certificate of Excellence</div><div class="award-org">Elevantel MEA / Hilton Pharma — "Shaping the Future of AI-Enabled Operational Excellence"</div></div><div class="award-date">May 2026</div></div>
+        <div class="award-row"><div><div class="award-name">Guardians of Pharma Excellence Award</div><div class="award-org">Health Asia 2024</div></div><div class="award-date">2024</div></div>
+        <div class="award-row"><div><div class="award-name">Pharmaceutical Marketing Award</div><div class="award-org">Health Asia 2024</div></div><div class="award-date">2024</div></div>
+        <div class="award-row"><div><div class="award-name">"Treat the Trigger" Recognition</div><div class="award-org">Allergy &amp; Asthma Forum, Getz Pharma</div></div><div class="award-date">—</div></div>
+        <div class="award-row"><div><div class="award-name">Judge, Digital Health Pakistan Hackathon</div><div class="award-org">Getz Pharma-sponsored initiative</div></div><div class="award-date">—</div></div>
+        <div class="award-row"><div><div class="award-name">Panelist, Dvago 7th ADP CON</div><div class="award-org">2025</div></div><div class="award-date">2025</div></div>
+        <div class="award-row"><div><div class="award-name">Certificate of Appreciation</div><div class="award-org">Pakistan Toastmasters Annual Conference (PAKTAC)</div></div><div class="award-date">2023</div></div>
+        <div class="award-row"><div><div class="award-name">Certificate of Achievement</div><div class="award-org">"Critical Customer and Competitor Analysis for Winning Market," PIM</div></div><div class="award-date">2007</div></div>
+        <div class="award-row"><div><div class="award-name">Certificate of Merit</div><div class="award-org">Fresenius Kabi Oncology Training Program</div></div><div class="award-date">Dec 2009</div></div>
+        <div class="award-row"><div><div class="award-name">"Man of the Month"</div><div class="award-org">Bristol-Myers Squibb Pakistan</div></div><div class="award-date">Nov 2001</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="education">
+    <div class="wrap">
+      <div class="sec-head"><h2>Education &amp; Languages</h2></div>
+      <div class="edu-lang">
+        <div>
+          <div class="edu-item">
+            <div class="deg">Post-Graduate Diploma, Supply Chain Management</div>
+            <div class="sch">Institute of Business Administration (IBA), Karachi — 2016</div>
+          </div>
+          <div class="edu-item">
+            <div class="deg">MBA, Marketing</div>
+            <div class="sch">Preston University, Karachi — 2001</div>
+          </div>
+          <div class="edu-item">
+            <div class="deg">B.Sc., Microbiology, Biochemistry &amp; Zoology</div>
+            <div class="sch">University of Karachi — 1998</div>
+          </div>
+        </div>
+        <div>
+          <div class="lang-item"><span>English</span><div class="lang-bar"><i style="width:80%"></i></div><span style="font-family:'IBM Plex Mono',monospace;font-size:12px;">B2</span></div>
+          <div class="lang-item"><span>Urdu</span><div class="lang-bar"><i style="width:100%"></i></div><span style="font-family:'IBM Plex Mono',monospace;font-size:12px;">C2</span></div>
+          <div class="lang-item"><span>Arabic</span><div class="lang-bar"><i style="width:25%"></i></div><span style="font-family:'IBM Plex Mono',monospace;font-size:12px;">A2</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer id="contact">
+  <div class="wrap">
+    <div class="foot-grid">
+      <h2>Let's talk about what he can build for your commercial organization.</h2>
+      <div>
+        <p>raheelsiddiqui06@gmail.com · Lombard, IL 60148</p>
+        <div class="foot-links">
+          <a href="mailto:raheelsiddiqui06@gmail.com" class="btn btn-primary">Email Raheel</a>
+          <a href="https://linkedin.com/in/raheel-siddiqui-b97b38176" target="_blank" rel="noopener" class="btn btn-outline">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+const DATA = {
+  general: {
+    label: "General / US Market",
+    short: "General / US",
+    title: "Chief Commercial Officer — Pharmaceutical & Life Sciences",
+    file: "Raheel_Siddiqui_Resume_US.pdf",
+    summary: "Results-driven pharmaceutical commercial executive and Chief Commercial Officer with 20+ years of progressive leadership, including enterprise-wide P&L accountability for a ~$160M portfolio and hands-on brand leadership spanning Cardiology, Oncology, Orthopedics, Women's Health, Neurology, and General/Acute Care. Seeking to apply broad CCO-level, multi-specialty commercial leadership within the US pharmaceutical market.",
+    competencies: ["Multi-Specialty Portfolio Strategy","Enterprise P&L Leadership","CCO-Level Commercial Leadership","Commercial Strategy & Transformation","Go-to-Market Strategy & Execution","International Market Expansion","Sales Force Effectiveness","Cross-Functional & Medical Affairs Alignment","Digital Commercial Transformation","HCP & Patient Engagement","Forecasting, Budgeting & Planning","Talent Development & Leadership Pipeline"],
+    highlights: [
+      "Hold enterprise-wide P&L accountability for a ~$160M multi-entity pharmaceutical portfolio as Chief Commercial Officer, Hilton Pharma.",
+      "Led the acute general business division — $124M portfolio, 1,700+ professionals — as Commercial Director, Getz Pharma.",
+      "Grew the Methycobal neurology brand to a ~$27.6M run-rate within 6 months, making it Pakistan's No. 1 player in the neurology segment.",
+      "Advanced Hilton Pharma from 7th to 6th, and Getz Pharma from 2nd to 1st, in national market rankings by growth and value.",
+      "Grew the Risek brand from $24.1M to $44.8M under his commercial leadership.",
+      "Led and scaled commercial organizations of 2,200+ professionals across 5 international markets.",
+      "Doubled Helix Pharma revenues from $5.5M to $11.4M (106% growth) in 3.5 years as Head of Marketing & Sales."
+    ]
+  },
+  cardiology: {
+    label: "Cardiology",
+    short: "Cardiology",
+    title: "Chief Commercial Officer — Cardiology Commercial Leadership",
+    file: "Raheel_Siddiqui_Cardiology_Resume.pdf",
+    summary: "Pharmaceutical commercial executive with 20+ years of progressive leadership, including enterprise-wide P&L accountability for a ~$160M portfolio and direct cardiology portfolio management experience. Hands-on leadership of cardiology business units, brand strategy, and sales force effectiveness, seeking to apply deep cardiology commercial expertise within the US market.",
+    competencies: ["Cardiology Portfolio Strategy","Enterprise P&L Leadership","Cardiology Brand Strategy & Execution","Commercial Strategy & Transformation","Go-to-Market Strategy & Execution","International Market Expansion","Sales Force Effectiveness","Cross-Functional & Medical Affairs Alignment","Digital Commercial Transformation","HCP Engagement & Stakeholder Management","Forecasting, Budgeting & Planning","Talent Development & Leadership Pipeline"],
+    highlights: [
+      "Managed a $34M cardiology, diabetology, gastroenterology, and general medicine portfolio as Director, Business Unit at Getz Pharma, with direct ownership of cardiology brand strategy.",
+      "Grew the Methycobal neurology brand to a ~$27.6M run-rate within 6 months at Hilton Pharma.",
+      "Advanced Hilton Pharma from 7th to 6th, and Getz Pharma from 2nd to 1st, in national market rankings.",
+      "Grew the Risek brand from $24.1M to $44.8M under his commercial leadership.",
+      "Led and scaled commercial organizations of 2,200+ professionals across 5 international markets.",
+      "Doubled Helix Pharma revenues from $5.5M to $11.4M (106% growth) in 3.5 years."
+    ]
+  },
+  generalacute: {
+    label: "General / Acute Care",
+    short: "General/Acute",
+    title: "Chief Commercial Officer — Pharmaceutical & Life Sciences",
+    file: "Raheel_Siddiqui_GeneralAcute_Resume.pdf",
+    summary: "Chief Commercial Officer with 20+ years of pharmaceutical leadership, including enterprise-wide P&L accountability for a ~$160M portfolio and direct leadership of acute and general-medicine business divisions. Successfully expanded business across 5 international markets, seeking to leverage international commercial expertise within US general medicine and acute care segments.",
+    competencies: ["Enterprise P&L Leadership","Commercial Strategy & Transformation","Go-to-Market Strategy & Execution","Portfolio Lifecycle Management","International Market Expansion","Sales Force Effectiveness","Cross-Functional Leadership","Digital Commercial Transformation","Market Access & Brand Strategy","HCP Engagement & Stakeholder Management","Forecasting, Budgeting & Planning","Talent Development & Leadership Pipeline"],
+    highlights: [
+      "Led the acute general business division — $124M portfolio, 1,700+ professionals — as Commercial Director at Getz Pharma.",
+      "Managed a $34M portfolio spanning Cardiology, Diabetology, Gastroenterology, and General Medicine as Director, Business Unit.",
+      "Managed an enterprise-wide ~$160M pharmaceutical portfolio with full P&L accountability as CCO, Hilton Pharma.",
+      "Led and scaled commercial organizations of 2,200+ professionals across sales, marketing, medical affairs, training, and distribution.",
+      "Drove international market expansion into 5 countries: Sri Lanka, Cambodia, Kenya, Uganda, and Uzbekistan."
+    ]
+  },
+  gynecology: {
+    label: "Women's Health / Gynecology",
+    short: "Gynecology",
+    title: "Chief Commercial Officer — Women's Health & Gynecology Commercial Leadership",
+    file: "Raheel_Siddiqui_Gynecology_Resume.pdf",
+    summary: "Pharmaceutical commercial executive with 20+ years of progressive leadership, including enterprise-wide P&L accountability for a ~$160M portfolio and direct commercial leadership of a national gynecology/women's-health portfolio, with hands-on brand campaigns and national sales operations for women's-health products.",
+    competencies: ["Women's Health / Gynecology Portfolio Leadership","Enterprise P&L Leadership","National Sales & Brand Campaign Strategy","Commercial Strategy & Transformation","Go-to-Market Strategy & Execution","International Market Expansion","Sales Force Effectiveness","Cross-Functional & Medical Affairs Alignment","Digital Commercial Transformation","HCP & Patient Engagement","Forecasting, Budgeting & Planning","Talent Development & Leadership Pipeline"],
+    highlights: [
+      "Led national commercial operations for the Gynae/Paeds segment (Transamin, Cefim, Ferosoft, Cerophene) as National Sales Manager at Hilton Pharma, including the 'Healthy Women Healthy Nation' campaign.",
+      "Grew the Methycobal neurology brand to a ~$27.6M run-rate within 6 months at Hilton Pharma.",
+      "Advanced Hilton Pharma from 7th to 6th, and Getz Pharma from 2nd to 1st, in national market rankings.",
+      "Grew the Risek brand from $24.1M to $44.8M under his commercial leadership.",
+      "Led and scaled commercial organizations of 2,200+ professionals across 5 international markets."
+    ]
+  },
+  neurology: {
+    label: "Neurology",
+    short: "Neurology",
+    title: "Chief Commercial Officer — Neurology Commercial Leadership",
+    file: "Raheel_Siddiqui_Neurology_Resume.pdf",
+    summary: "Pharmaceutical commercial executive with 20+ years of progressive leadership and direct neurology portfolio leadership, including current oversight of a neurology franchise recognized as Pakistan's No. 1 player in the segment. Acknowledged contributor to a national neurology clinical guideline published in a peer-reviewed journal.",
+    competencies: ["Neurology Portfolio Strategy & Brand Leadership","Enterprise P&L Leadership","Rapid Brand Growth & Market Leadership","Commercial Strategy & Transformation","Go-to-Market Strategy & Execution","International Market Expansion","Sales Force Effectiveness","Cross-Functional & Medical Affairs Alignment","Digital Commercial Transformation","HCP Engagement & Stakeholder Management","Forecasting, Budgeting & Planning","Talent Development & Leadership Pipeline"],
+    highlights: [
+      "Drove the Methycobal neurology brand to a ~$27.6M run-rate within 6 months at Hilton Pharma, reinforcing Pakistan's No. 1 position in the neurology segment.",
+      "Advanced Hilton Pharma from 7th to 6th, and Getz Pharma from 2nd to 1st, in national market rankings.",
+      "Grew the Risek brand from $24.1M to $44.8M under his commercial leadership.",
+      "Led and scaled commercial organizations of 2,200+ professionals across 5 international markets.",
+      "Acknowledged contributor to a national multidisciplinary clinical guideline on low back pain management (Pakistan Journal of Medical Sciences, 2024)."
+    ]
+  },
+  oncology: {
+    label: "Oncology",
+    short: "Oncology",
+    title: "Director / Senior Director, Oncology — Commercial Leadership",
+    file: "Raheel_Siddiqui_Oncology_Resume.pdf",
+    summary: "Pharmaceutical commercial executive with 20+ years of progressive leadership and direct oncology business development experience, including hands-on oncology brand launches, formulary access strategy, and new product development, seeking to apply deep oncology commercial expertise within the US oncology market.",
+    competencies: ["Oncology Portfolio Strategy","Enterprise P&L Leadership","Oncology Brand Launch & Formulary Access","Commercial Strategy & Transformation","New Oncology Product Development","Go-to-Market Strategy & Execution","International Market Expansion","Sales Force Effectiveness","Cross-Functional & Medical Affairs Alignment","Digital Commercial Transformation","HCP Engagement & Stakeholder Management","Talent Development & Leadership Pipeline"],
+    highlights: [
+      "Assessed new oncology business opportunities and led new product development as Business Unit Head at ATCO; supported Taxot, Paclitaxifil & Pantestone (IMS Best Launch, Q1 2010) and Syngab (One Star Brand Award).",
+      "Grew the Methycobal neurology brand to a ~$27.6M run-rate within 6 months at Hilton Pharma.",
+      "Advanced Hilton Pharma from 7th to 6th, and Getz Pharma from 2nd to 1st, in national market rankings.",
+      "Grew the Risek brand from $24.1M to $44.8M under his commercial leadership.",
+      "Led and scaled commercial organizations of 2,200+ professionals across 5 international markets."
+    ]
+  },
+  orthopedics: {
+    label: "Orthopedics",
+    short: "Orthopedics",
+    title: "Chief Commercial Officer — Orthopedics & Specialty Commercial Leadership",
+    file: "Raheel_Siddiqui_Orthopedics_Resume.pdf",
+    summary: "Pharmaceutical commercial executive with 20+ years of progressive leadership and early-career brand management experience in orthopedics, with deep expertise in portfolio strategy, sales force effectiveness, and go-to-market execution across multiple specialty segments.",
+    competencies: ["Orthopedics & Specialty Portfolio Strategy","Enterprise P&L Leadership","Brand Management & Lifecycle Strategy","Commercial Strategy & Transformation","Go-to-Market Strategy & Execution","International Market Expansion","Sales Force Effectiveness","Cross-Functional & Medical Affairs Alignment","Digital Commercial Transformation","HCP Engagement & Stakeholder Management","Forecasting, Budgeting & Planning","Talent Development & Leadership Pipeline"],
+    highlights: [
+      "Managed brand strategy and commercial execution for orthopedics and neurology portfolios as Product Manager at Hilton Pharma Pakistan.",
+      "Grew the Methycobal neurology brand to a ~$27.6M run-rate within 6 months at Hilton Pharma.",
+      "Advanced Hilton Pharma from 7th to 6th, and Getz Pharma from 2nd to 1st, in national market rankings.",
+      "Grew the Risek brand from $24.1M to $44.8M under his commercial leadership.",
+      "Led and scaled commercial organizations of 2,200+ professionals across 5 international markets."
+    ]
+  }
+};
+
+const order = ["general","cardiology","generalacute","gynecology","neurology","oncology","orthopedics"];
+let current = "general";
+
+function renderMenu(){
+  const menu = document.getElementById('ddMenu');
+  menu.innerHTML = "";
+  order.forEach(key=>{
+    const d = DATA[key];
+    const item = document.createElement('div');
+    item.className = 'dd-item' + (key===current ? ' active' : '');
+    item.setAttribute('role','option');
+    item.innerHTML = `${d.label}<small>${d.file}</small>`;
+    item.addEventListener('click', ()=> selectSpecialty(key));
+    menu.appendChild(item);
+  });
+}
+
+function selectSpecialty(key){
+  current = key;
+  const d = DATA[key];
+  document.getElementById('ddLabel').textContent = d.short;
+  document.getElementById('summary-text').textContent = d.summary;
+  document.getElementById('specTag').textContent = d.label + " view";
+
+  const compGrid = document.getElementById('compGrid');
+  compGrid.innerHTML = "";
+  d.competencies.forEach(c=>{
+    const chip = document.createElement('div');
+    chip.className = 'comp-chip';
+    chip.textContent = c;
+    compGrid.appendChild(chip);
+  });
+
+  const hlList = document.getElementById('hlList');
+  hlList.innerHTML = "";
+  d.highlights.forEach((h,i)=>{
+    const row = document.createElement('div');
+    row.className = 'hl-item';
+    row.innerHTML = `<div class="num">0${i+1}</div><p>${h}</p>`;
+    hlList.appendChild(row);
+  });
+
+  renderMenu();
+  document.getElementById('specialtyDropdown').classList.remove('open');
+}
+
+const dd = document.getElementById('specialtyDropdown');
+document.getElementById('ddBtn').addEventListener('click', (e)=>{
+  e.stopPropagation();
+  dd.classList.toggle('open');
+  document.getElementById('ddBtn').setAttribute('aria-expanded', dd.classList.contains('open'));
+});
+document.addEventListener('click', (e)=>{
+  if(!dd.contains(e.target)) dd.classList.remove('open');
+});
+document.addEventListener('keydown', (e)=>{
+  if(e.key === 'Escape') dd.classList.remove('open');
+});
+
+renderMenu();
+selectSpecialty('general');
+</script>
+
+</body>
+</html>
