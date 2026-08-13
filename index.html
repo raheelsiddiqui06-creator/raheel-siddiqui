@@ -184,6 +184,24 @@
   .pub-card h4{margin:0 0 6px;font-family:'Fraunces',serif;font-size:16.5px;font-weight:600;}
   .pub-card p{margin:0;font-size:13.5px;color:var(--ink-soft);}
 
+  .feature-video{
+    display:grid;grid-template-columns:1.25fr 1fr;gap:28px;align-items:center;
+    background:var(--paper-raised);border:1px solid var(--line-strong);border-radius:6px;
+    padding:22px;margin-top:30px;
+    box-shadow:0 20px 44px -26px rgba(22,35,43,.3);position:relative;overflow:hidden;
+  }
+  .feature-video::before{
+    content:"";position:absolute;top:0;left:0;right:0;height:3px;
+    background:linear-gradient(90deg,var(--brass),var(--teal));
+  }
+  .fv-player{border-radius:4px;overflow:hidden;background:#0c1216;}
+  .fv-player video{width:100%;display:block;aspect-ratio:16/9;background:#0c1216;}
+  .fv-label{
+    font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.08em;
+    text-transform:uppercase;color:var(--brass);margin-bottom:8px;
+  }
+  .fv-copy h3{font-size:20px;line-height:1.25;margin-bottom:10px;}
+  .fv-copy p{margin:0;font-size:14.5px;color:var(--ink-soft);}
   .video-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
   .video-card{background:var(--paper-raised);border:1px solid var(--line);border-radius:4px;overflow:hidden;}
   .video-card video{width:100%;display:block;aspect-ratio:9/16;object-fit:cover;background:#0c1216;max-height:340px;}
@@ -225,6 +243,7 @@
     .comp-grid{grid-template-columns:repeat(2,1fr);}
     .pub-grid,.media-grid{grid-template-columns:1fr;}
     .video-grid{grid-template-columns:repeat(2,1fr);}
+    .feature-video{grid-template-columns:1fr;gap:20px;}
     .hero-right{margin-top:8px;}
     .awards-grid{grid-template-columns:1fr;}
     .award-row:nth-child(odd){border-right:none;padding-right:0;}
@@ -302,7 +321,7 @@
           <div>
             <div class="p-name">Raheel Siddiqui</div>
             <div class="p-role">Chief Commercial Officer</div>
-            <div class="p-loc">Lombard, IL </div>
+            <div class="p-loc">Lombard, IL · Karachi, Pakistan</div>
           </div>
         </div>
         <div class="ledger">
@@ -498,6 +517,17 @@
         <span class="tag">Recognized by the Governor of Punjab</span>
       </div>
       <p style="max-width:70ch;color:var(--ink-soft);margin-bottom:0;">Began his media career as a Radio Jockey at FM 100 Pakistan, hosting public-awareness programs across a range of health topics. Later hosted and produced televised COVID-19 public-awareness campaigns under physician supervision, and conducted published interviews with prominent medical personalities for Daily Dawn. Received formal appreciation from the <strong>Governor of Punjab</strong> for public-health communication delivered via television, radio, and newspaper during the COVID-19 pandemic.</p>
+
+      <div class="feature-video">
+        <div class="fv-player">
+          <video controls preload="metadata" src="media/governor-program-highlights.mp4"></video>
+        </div>
+        <div class="fv-copy">
+          <div class="fv-label">Featured — Governor's Recognition</div>
+          <h3>The televised public-health program he hosted end to end</h3>
+          <p>Highlights from the full show, which he conceived, hosted, and carried single-handedly. The program's public-health impact earned him formal appreciation from the <strong>Governor of Punjab</strong> — recognition of communication work delivered across television, radio, and print during the COVID-19 pandemic.</p>
+        </div>
+      </div>
 
       <h3 style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;text-transform:uppercase;letter-spacing:.08em;color:var(--ink-soft);margin:34px 0 16px;">Video Appearances</h3>
       <div class="video-grid">
